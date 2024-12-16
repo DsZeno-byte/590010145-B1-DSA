@@ -111,13 +111,13 @@ int main() {
         printf("6. Exit\n");
         printf("Enter your choice: ");
         scanf("%d", &choice);
-        getchar();  // To consume the newline character left by scanf
+        getchar();  
 
         switch (choice) {
             case 1:
                 printf("Enter task description: ");
                 fgets(description, 100, stdin);
-                description[strcspn(description, "\n")] = '\0';  // Remove newline character
+                description[strcspn(description, "\n")] = '\0';  
                 addTaskAtBeginning(description);
                 break;
             case 2:

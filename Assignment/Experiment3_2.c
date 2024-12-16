@@ -141,17 +141,14 @@ int main() {
     insertAtBeginning(10);
     insertAtEnd(20);
     insertAtEnd(30);
-    insertAtPosition(15, 2);  // Insert 15 at position 2
-    displayList();  // Output: 10 <-> 15 <-> 20 <-> 30 <-> NULL
-
+    insertAtPosition(15, 2);  
+    displayList();  
     deleteFromBeginning();
-    displayList();  // Output: 15 <-> 20 <-> 30 <-> NULL
-
+    displayList();  
     deleteFromEnd();
-    displayList();  // Output: 15 <-> 20 <-> NULL
-
+    displayList();  
     deleteFromPosition(2);
-    displayList();  // Output: 15 <-> NULL
+    displayList();  
 
     return 0;
 }
